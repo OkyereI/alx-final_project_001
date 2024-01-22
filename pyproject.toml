@@ -1,4 +1,4 @@
-[tool.poetry]
+-dev[tool.poetry]
 name = "repl-nix-alx-finalproject001"
 version = "0.1.0"
 description = ""
