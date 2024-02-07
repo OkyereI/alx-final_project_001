@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Login </title>
+        <title> Register </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">           <meta charset="UTF-8">
             <meta name="google-site-verification" content="Co5ss0eMqJIVZAtVV6WCvsO6s9PBwJC0I5ZafJvM1Xo" />
             <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,9 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             
     </head>
-    <body></br></br></br></br></br>
+    <body>
+      <h1>Register your account with us</h1>
+    </br></br></br></br></br>
         <div align="center">
           <div align="center" class="border">
              <div class="header">
@@ -30,7 +32,7 @@
                     <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
                   <input id="email" name="email" type="text" placeholder="Enter Your email" class="textbox"/></br></br>
                     <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
-                    <input type="submit" class="btn btn-info" value="create acount"></br></br>
+                    <input type="submit" class="btn btn-info mt-5" value="create acount"></br></br>
                 </form>
             </h2>
             <p class="bottom">if you  have an account?  <a class="bottom" href="{{url_for('login')}}"> login here</a></p>

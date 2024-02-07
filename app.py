@@ -22,6 +22,10 @@ def hello_world():
 def home():
     return render_template('home.html')
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
 @app.route("/register", methods=['GET','POST'])
 def register():
     return render_template('register.html')
@@ -31,4 +35,4 @@ def login():
     return render_template('login.html')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=7002, debug=True)
