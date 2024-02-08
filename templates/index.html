@@ -1,5 +1,6 @@
 
 
+{%include 'top.html'%}
 <!doctype html>
 <html>
   <title>job application website </title>
@@ -14,53 +15,95 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="static/style.css" rel="stylesheet">
+     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
      <style>
-    :root{
+      :root{
 
-                    --grey: #172339;
-                    --cream-white: #FAF8F6;
-                    --cream: #F3EDE7;
-                    --dark-grey:#49566D;
+        --grey: #172339;
+        --cream-white: #FAF8F6;
+        --cream: #F3EDE7;
+        --dark-grey:#49566D;
 
-                    --cream-light:#FFFFFF;
-                    --dark-blue: #172339;
-    }
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+        --cream-light:#FFFFFF;
+        --dark-blue: #172339;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 
-    }
-    *ul{
-        list-style-type: none;
-    }
-    *a{
-        text-decoration:none;
-    }
-    body{
-        font-family: 'epilogue',sans-serif;
+}
+*ul{
+list-style-type: none;
+}
+*a{
+text-decoration:none;
+}
+body{
+font-family: 'epilogue',sans-serif;
 
-        background-color:#FAF8F6;
-        display: grid;
+background-color:#FAF8F6;
+display: grid;
 
 
-    }
-    .container{
-        width: 100vh;
-        height: 100vh; 
-        align-items:center;
-        align-content:center;
-    }
+}
+.container{
+width: 100vh;
+height: 100vh; 
+align-items:center;
+align-content:center;
+}
 
-     #le{
-        width:100%;
-      list-style-type: none;
-      margin: 10px auto;
-      padding: 10px;
-      overflow: hidden;
-      background-color: seagreen;
-      left:20px;
-    }
+#le{
+width:100%;
+list-style-type: none;
+margin: 10px auto;
+padding: 10px;
+overflow: hidden;
+background-color: blue;
+left:10px;
+}
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;  
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
+ul li a i{
+margin-right:5px;
+}
+
+
+
+
     
 
 
@@ -81,6 +124,7 @@
       </ul>  
 
         </div>
+        <div class='center'><img src="static/logo.png" class="rounded mx-auto d-block" alt="..." style='width:20%'></div>
   <hr>
        <div class='col '>
 
@@ -120,7 +164,93 @@
 
 
         </div>
+        <div>
        {% extends 'footer.html'%}
+
+             
+      </div>
+        <div style='margin-top:330px'> 
+               
+
+<footer class=" " style='height:20px;position:'absolute';background-color:'blue'; margin-top:40%; '>
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        data-mdb-ripple-init
+        class="btn btn-link btn-floating btn-lg text-body m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3 mb-4" style="background-color: rgba(0, 0, 0, 0.05); margin-top:120px">
+    © 2024 Copyright_project
+    <a class="text-body" href="">bestzion3.net</a>
+  </div>
+  <!-- Copyright -->
+
+        </div>
+        
+        </div>
+       </div>
        
           
     </body>

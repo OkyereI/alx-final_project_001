@@ -1,6 +1,6 @@
 <!-- Store this code in 'login.html' file inside the 'templates' folder -->
 
- <!<!DOCTYPE>
+ <!DOCTYPE>
 
 <html>
     <head>
@@ -18,13 +18,13 @@
             
     </head>
     <body>
-      <h1>Register your account with us</h1>
+      <div class="header1">
+        <h1 class="center">Register your account with us</h1>
+     </div>
     </br></br></br></br></br>
         <div align="center">
           <div align="center" class="border">
-             <div class="header">
-                <h1 class="word">Register</h1>
-             </div>
+            
           </br></br></br>
             <h2 class="word">
                 <form action="{{ url_for('register') }}" method="post">
@@ -38,5 +38,6 @@
             <p class="bottom">if you  have an account?  <a class="bottom" href="{{url_for('login')}}"> login here</a></p>
           </div>
         </div>
+        <div>{%extends 'bottom.html'%}</div>
     </body>
 </html
