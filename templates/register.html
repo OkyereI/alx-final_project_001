@@ -19,25 +19,29 @@
     </head>
     <body>
       <div class="header1">
-        <h1 class="center">Register your account with us</h1>
+        <h1 class="text-center mt-5 mb-2">Register your account with us</h1>
      </div>
     </br></br></br></br></br>
-        <div align="center">
-          <div align="center" class="border">
-            
-          </br></br></br>
-            <h2 class="word">
-                <form action="{{ url_for('register') }}" method="post">
-                  <div class="msg">{{ msg }}</div>
-                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
-                  <input id="email" name="email" type="text" placeholder="Enter Your email" class="textbox"/></br></br>
-                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
-                    <input type="submit" class="btn btn-info mt-5" value="create acount"></br></br>
-                </form>
-            </h2>
-            <p class="bottom">if you  have an account?  <a class="bottom" href="{{url_for('login')}}"> login here</a></p>
-          </div>
-        </div>
+    <form class='center'>
+      <div class="form-group">
+        <label for="exampleInputPassword1">FullName</label>
+        <input type="name" class="form-control" id="exampleName" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">ConfirmPassword</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+      </div>
+      
+      <a type="submit" class=" btn btn-primary mt-5 mb-5" href='/login'>Submit</a>
+    </form>
         <div>{%extends 'bottom.html'%}</div>
     </body>
-</html
+</html>
