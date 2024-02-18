@@ -38,7 +38,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="/home/isaac/newapp/env"
+=======
+VIRTUAL_ENV="/home/isaac/landing_project/env"
+>>>>>>> 685f1ea (new add)
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

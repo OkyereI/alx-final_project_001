@@ -33,7 +33,11 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/home/isaac/newapp/env"
+=======
+set -gx VIRTUAL_ENV "/home/isaac/landing_project/env"
+>>>>>>> 685f1ea (new add)
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

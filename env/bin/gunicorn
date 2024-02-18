@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/home/isaac/newapp/env/bin/python3
+=======
+#!/home/isaac/landing_project/env/bin/python3
+>>>>>>> 685f1ea (new add)
 # -*- coding: utf-8 -*-
 import re
 import sys
